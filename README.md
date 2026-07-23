@@ -12,18 +12,18 @@ Paste a link, pick a format, done. No accounts, no ads, no telemetry — fully o
 
 </div>
 
-> ⚠️ **Requires FFmpeg.** Proton uses [FFmpeg](https://ffmpeg.org/download.html) to merge video/audio and convert to MP3 — it won't download anything without it. Grab a build from [ffmpeg.org/download.html](https://ffmpeg.org/download.html) (Windows: the [gyan.dev builds](https://www.gyan.dev/ffmpeg/builds/) are the easiest) and make sure `ffmpeg` is on your system `PATH`.
+> ⚠️ **Requires FFmpeg.** installify uses [FFmpeg](https://ffmpeg.org/download.html) to merge video/audio and convert to MP3 — it won't download anything without it. Grab a build from [ffmpeg.org/download.html](https://ffmpeg.org/download.html) (Windows: the [gyan.dev builds](https://www.gyan.dev/ffmpeg/builds/) are the easiest) and make sure `ffmpeg` is on your system `PATH`.
 
 ---
 
 ## What it does
 
-Proton is a small desktop app that wraps [yt-dlp](https://github.com/yt-dlp/yt-dlp) in a clean, dark-mode UI. Paste a YouTube link, see the thumbnail and title instantly, pick MP4 or MP3, and hit download — everything runs locally on your machine.
+installify is a small desktop app that wraps [yt-dlp](https://github.com/yt-dlp/yt-dlp) in a clean, dark-mode UI. Paste a YouTube link, see the thumbnail and title instantly, pick MP4 or MP3, and hit download — everything runs locally on your machine.
 
 - **MP4 & MP3, one click** — switch formats with a single toggle, no separate tools
 - **Pick your quality** — 1080p down to 480p for video, 320kbps or 192kbps for audio, or just leave it on "best"
 - **Editor-friendly by default** — videos download as H.264 out of the box, so they open cleanly in Premiere Pro and older editors, no re-encoding required
-- **Videos and audio, sorted** — set a fixed folder for MP4s and another for MP3s once, Proton remembers even after a restart
+- **Videos and audio, sorted** — set a fixed folder for MP4s and another for MP3s once, installify remembers even after a restart
 - **See before you download** — paste a link and the thumbnail, title and channel show up instantly
 - **Runs entirely on your machine** — no accounts, no cloud processing, no telemetry
 
@@ -40,8 +40,8 @@ Proton is a small desktop app that wraps [yt-dlp](https://github.com/yt-dlp/yt-d
 ### Run from source
 
 ```bash
-git clone https://github.com/<your-username>/proton.git
-cd proton
+git clone https://github.com/<your-username>/installify.git
+cd installify
 pip install -r requirements.txt
 python youtube_downloader_gui.py
 ```
@@ -50,10 +50,10 @@ python youtube_downloader_gui.py
 
 ```bash
 pip install pyinstaller pillow
-pyinstaller --onefile --windowed --name Proton --icon=proton.ico --add-data "proton.ico;." --collect-data qtawesome youtube_downloader_gui.py
+pyinstaller --onefile --windowed --name installify --icon=installify.ico --add-data "installify.ico;." --collect-data qtawesome youtube_downloader_gui.py
 ```
 
-The finished executable lands in `dist/Proton.exe`. `--collect-data qtawesome` is required — without it the icon font Proton relies on won't be bundled and every icon will render blank.
+The finished executable lands in `dist/Installify.exe`. `--collect-data qtawesome` is required — without it the icon font installify relies on won't be bundled and every icon will render blank.
 
 ## Configuration
 

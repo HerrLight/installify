@@ -27,15 +27,7 @@ Proton is a small desktop app that wraps [yt-dlp](https://github.com/yt-dlp/yt-d
 - **See before you download** — paste a link and the thumbnail, title and channel show up instantly
 - **Runs entirely on your machine** — no accounts, no cloud processing, no telemetry
 
-## Screenshots
 
-<div align="center">
-<img src="screenshots/screenshot-home.png" width="32%" alt="Proton home screen" />
-<img src="screenshots/screenshot-settings.png" width="32%" alt="Proton settings screen" />
-<img src="screenshots/screenshot-about.png" width="32%" alt="Proton about screen" />
-</div>
-
-*(drop your own `screenshot-home.png`, `screenshot-settings.png` and `screenshot-about.png` into the `screenshots/` folder — this section will pick them up automatically on GitHub)*
 
 ## Installation
 

@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚛ proton
+# ⚛ Installify
 
 **Download YouTube videos and music. Clean, fast, dead simple.**
 
